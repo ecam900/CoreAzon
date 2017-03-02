@@ -29,7 +29,12 @@ namespace CoreAzon
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(
+                    routes =>
+                    {
+                        routes.MapRoute("Default", "{controller=Home}/{action=Index}");
+                    }
+                );
 
 
             app.Run(async (context) =>
