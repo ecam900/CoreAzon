@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CoreAzon.Controllers
 {
+    [Route("Members")]
     public class MemberHomeController : Controller
     {
         // GET: /<controller>/
