@@ -12,10 +12,11 @@ namespace CoreAzon.Controllers
     public class HomeController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult Index(int id)
         {
             Contact contact = new Models.Contact()
             {
+                id = id,
                 FirstName = "Eric",
                 LastName = "Crescioni"
             };

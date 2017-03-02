@@ -32,7 +32,7 @@ namespace CoreAzon
             app.UseMvc(
                     routes =>
                     {
-                        routes.MapRoute("Default", "{controller=Home}/{action=Index}");
+                        routes.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
                     }
                 );
 
