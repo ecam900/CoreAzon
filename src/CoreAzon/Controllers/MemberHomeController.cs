@@ -18,5 +18,11 @@ namespace CoreAzon.Controllers
         {
             return View();
         }
+
+        [Route("Access")]
+        public IActionResult AccessGranted()
+        {
+            return View();
+        }
     }
 }
