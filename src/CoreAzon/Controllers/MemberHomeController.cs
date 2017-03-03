@@ -12,6 +12,8 @@ namespace CoreAzon.Controllers
     public class MemberHomeController : Controller
     {
         // GET: /<controller>/
+        [Route("Index")]
+        [Route("")]
         public IActionResult Index()
         {
             return View();
