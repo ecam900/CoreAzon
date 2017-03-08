@@ -1,4 +1,4 @@
-﻿@model CoreAzon.Models.Contact
+﻿@model CoreAzon.ViewModels.HomeIndexViewModel
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,6 +7,7 @@
     </title>
 </head>
 <body>
-    Hey there, @Model.FirstName @Model.LastName! Your id is @Model.id
+    Hey there, @Model.Contact.FirstName @Model.Contact.LastName! Your id is @Model.Contact.Id <br /> <br />
+    You work for @Model.Customer.CustomerName!
 </body>
 </html>
