@@ -14,8 +14,9 @@ namespace CoreAzon.Controllers
     [Route("Home")]
     public class HomeController : Controller
     {
-        [HttpGet]
-        public IActionResult Index()
+        //[HttpGet]
+        [Route("IndexWithForm")]
+        public IActionResult IndexWithForm()
         {
             return View("IndexWithForm");
         }
@@ -23,7 +24,7 @@ namespace CoreAzon.Controllers
         [Route("")]
         [Route("Index")]
         [Route("Index/{id}")]
-        [HttpPost]
+        //[HttpPost]
         public IActionResult Index(Contact contact)
         {
             //Contact contact = new Contact()
